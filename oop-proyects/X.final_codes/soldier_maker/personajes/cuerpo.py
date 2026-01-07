@@ -10,7 +10,7 @@ class Cuerpo:
         self.fuerza = fuerza
         self.inteligencia = inteligencia
 
-    def recibir_daño(self, cantidad):
+    def recibir_danio(self, cantidad):
         self.vida -= cantidad
         if self.vida < 0:
             self.vida = 0

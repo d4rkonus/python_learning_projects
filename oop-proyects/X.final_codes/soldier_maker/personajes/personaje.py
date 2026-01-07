@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-from cuerpo import Cuerpo
+from .cuerpo import Cuerpo
 
 # combina el cuerpo y el arma, ademas de definir acciones al atacar
 
@@ -11,14 +11,14 @@ class Personaje:
         self.arma = None # el personaje nace sin arma (de primeras)
 
 
-    def añadir_arma(self, arma):
+    def agregar_arma(self, arma):
         self.arma = arma
 
     def atacar(self, target):
         if self.arma:
-            daño = self.arma.atacar()
+            danio = self.arma.atacar()
         else:
-            daño = 5
+            danio = 5
         
-        target.cuerpo.recibir_daño(daño)
-        return daño
+        target.cuerpo.recibir_danio(danio)
+        return danio

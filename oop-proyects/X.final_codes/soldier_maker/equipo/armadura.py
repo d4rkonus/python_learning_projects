@@ -5,8 +5,8 @@ class Armadura:
         self.nombre = nombre
         self.defensa = defensa
 
-    def proteger(self, daño):
-        daño_reducido = daño - self.defensa
-        if daño_reducido < 0:
-            daño_reducido = 0
-        return daño_reducido
+    def proteger(self, danio):
+        danio_reducido = danio - self.defensa
+        if danio_reducido < 0:
+            danio_reducido = 0
+        return danio_reducido

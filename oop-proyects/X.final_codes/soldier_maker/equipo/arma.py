@@ -3,9 +3,9 @@
 # define cuanto daño hace el arma al atacar
 
 class Arma:
-    def __init__(self, nombre, daño):
+    def __init__(self, nombre, danio):
         self.nombre = nombre
-        self.daño = daño
+        self.danio = danio
     
     def atacar(self):
-        return self.daño
+        return self.danio
