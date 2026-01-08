@@ -44,7 +44,7 @@ def realizar_operacion(operador, numeros):
 
 def main():
     print("=" * 40)
-    print("       CALCULADORA INTERACTIVA")
+    print("       TERMINAL CALCULATOR")
     print("=" * 40)
 
     operadores_validos = ["+", "-", "*", "/"]
