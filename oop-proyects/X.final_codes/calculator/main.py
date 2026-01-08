@@ -5,10 +5,10 @@ from operadores import add, subtract, multiply, divide
 
 def obtener_numeros(cantidad):
     numeros = []
-    for i in range(cantidad):
+    for numero in range(cantidad):
         while True:
             try:
-                numero = float(input(f"Ingresa el número {i + 1}: "))
+                numero = float(input(f"Ingresa el número {numero + 1}: "))
                 numeros.append(numero)
                 break
             except ValueError:
